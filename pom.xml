@@ -10,11 +10,11 @@
 
   <properties>
     <kotlin.version>1.2.30</kotlin.version>
-    <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+    <spring-boot.version>2.0.0.RELEASE</spring-boot.version>
 
     <liquibase.version>3.5.3</liquibase.version>
     <liquibase-hibernate5.version>3.6</liquibase-hibernate5.version>
-    <validation-api.version>1.1.0.Final</validation-api.version>
+    <validation-api.version>2.0.1.Final</validation-api.version>
   </properties>
 
   <dependencyManagement>
@@ -122,17 +122,17 @@
           <dependency>
             <groupId>org.liquibase.ext</groupId>
             <artifactId>liquibase-hibernate5</artifactId>
-            <version>3.6</version>
+            <version>${liquibase-hibernate5.version}</version>
           </dependency>
           <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>1.5.9.RELEASE</version>
+            <version>${spring-boot.version}</version>
           </dependency>
           <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
-            <version>1.1.0.Final</version>
+            <version>${validation-api.version}</version>
           </dependency>
         </dependencies>
 
